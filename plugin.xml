@@ -19,11 +19,11 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Regex">
-        <param name="android-package" value="me.duras.plugin.regex"/>
+        <param name="android-package" value="me.duras.plugin.Regex"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Regex.java" target-dir="src/me/regex/plugin/"/>
+    <source-file src="src/android/Regex.java" target-dir="src/me/duras/plugin/"/>
   </platform>
 
 </plugin>
