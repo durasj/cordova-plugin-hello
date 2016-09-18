@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class Regex extends CordovaPlugin {
 
-    private static final String REGEX = "\\d(/?+ *+\\d)++";
+    private static final String REGEX = "[+]?\\d(/?+ *+\\d)++";
 
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
