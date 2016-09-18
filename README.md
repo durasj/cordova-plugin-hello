@@ -1,4 +1,4 @@
-# Cordova Plugin Text Regex
+# Cordova Plugin Test Regex
 
 Simple test plugin that does some specific matching/replacing in Java. Currently only marks phone numbers - or basically any group of numbers looking like phone number.
 
