@@ -2,6 +2,6 @@
 
 module.exports = {
     markPhoneNumbers: function (text, successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "Regex", "greet", [text]);
+        cordova.exec(successCallback, errorCallback, "Regex", "markPhoneNumbers", [text]);
     }
 };
