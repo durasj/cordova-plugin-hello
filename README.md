@@ -1,46 +1,22 @@
 # Cordova Plugin Text Regex
 
-Simple plugin that returns your string prefixed with hello.
-
-Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.
+Simple test plugin that does some specific matching/replacing in Java. Currently only marks phone numbers - or basically any group of numbers looking like phone number.
 
 ## Using
-
-Create a new Cordova Project
-
-    $ cordova create hello com.example.helloapp Hello
     
 Install the plugin
 
-    $ cd hello
-    $ cordova plugin add https://github.com/don/cordova-plugin-hello.git
-    
-
-Edit `www/js/index.js` and add the following code inside `onDeviceReady`
+    $ cordova plugin add https://github.com/durasj/cordova-plugin-test-regex
 
 ```js
-    var success = function(message) {
-        alert(message);
+    var success = function(contactString) {
+        // Will be "Name Surname, **S**+400 900 123 456**E**, **S**0945 456 789**E**"
+        alert(contactString);
     }
 
-    var failure = function() {
-        alert("Error calling Hello Plugin");
+    var failure = function(error) {
+        alert("Error calling Plugin", error);
     }
 
-    hello.greet("World", success, failure);
+    regex.markPhoneNumbers("Name Surname, +400 900 123 456, 0945 456 789", success, failure);
 ```
-
-Install iOS or Android platform
-
-    cordova platform add ios
-    cordova platform add android
-    
-Run the code
-
-    cordova run 
-
-## More Info
-
-For more information on setting up Cordova see [the documentation](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
-
-For more info on plugins see the [Plugin Development Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
