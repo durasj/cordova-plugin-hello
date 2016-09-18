@@ -23,7 +23,7 @@
       </feature>
     </config-file>
 
-    <source-file src="src/android/Regex.java" target-dir="src/com/regex/plugin/"/>
+    <source-file src="src/android/Regex.java" target-dir="src/me/regex/plugin/"/>
   </platform>
 
 </plugin>

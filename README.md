@@ -1,4 +1,4 @@
-# Cordova Hello World Plugin
+# Cordova Plugin Text Regex
 
 Simple plugin that returns your string prefixed with hello.
 
