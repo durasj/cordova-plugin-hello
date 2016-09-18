@@ -1,4 +1,4 @@
-package com.example.plugin;
+package me.duras.plugin.regex;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
