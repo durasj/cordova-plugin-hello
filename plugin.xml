@@ -18,7 +18,7 @@
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Test Regex">
+      <feature name="Regex">
         <param name="android-package" value="me.duras.plugin.regex"/>
       </feature>
     </config-file>
